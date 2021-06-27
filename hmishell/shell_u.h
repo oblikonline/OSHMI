@@ -166,6 +166,7 @@ public:		// User declarations
         void ShowSelScreen(void);
         int NumScreens;
         int SelScreen;
+        String BROWSER_OPTIONS;
         String VISOR_EVENTOS;
         String VISOR_TABULAR;
         String VISOR_TELAS;
@@ -199,8 +200,7 @@ extern int REMOTE_PORT;
 #define CLR_SCR_BGD_NOTSELECTED 0x02fdf5d8
 #define CLR_SCR_GRP 0x028fefdf1
 
-#define SHELLAPIURL "htdocs/shellapi.rjs"
-
+extern String SHELLAPIURL;
 
 void ExecExternApp(char * cmd);
 void Loga(String msg, String arq=ARQ_LOG );
